@@ -235,6 +235,7 @@
 .img-criar-conta{
     background-image: url(../images/img_cadastro.png);
     border-radius: 0 180px 180px 0;
+    transition: transform .5s, opacity .5s;;
 }
 
 .nome-sobrenome{
