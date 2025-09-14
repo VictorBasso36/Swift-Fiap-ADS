@@ -1,21 +1,8 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif;
-}
+
 
 .tela {
     background-color: #F9FAFB;
     overflow-x: hidden;
-}
-
-:root {
-    --corlaranja: #E75025;
-    --corlaranjaescuro: rgb(175, 61, 30);
-    --corlaranjaclaro: #F4D2CA;
-    --corcinza: #6C6C6C;
-    --corpreta: #000000;
 }
 
 .interface {
