@@ -1,93 +1,213 @@
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            display: flex;
-            height: 100vh;
-            background-color: #f4f7fa;
-        }
+/* === SEU CSS ORIGINAL (COM PEQUENOS AJUSTES) === */
+:root {
+    --corlaranja: #ff6600;
+    /* Defini uma cor de exemplo, substitua pela sua */
+}
 
-        .sidebar {
-            width: 250px;
-            background-color: white;
-            z-index: 3;
-            padding: 20px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f4f7fa;
+    /* Evita que o conteúdo principal "pule" quando a scrollbar some/aparece */
+    overflow: hidden;
+}
 
-        .sidebar h2 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
+.sidebar {
+    width: 250px;
+    background-color: white;
+    z-index: 1000;
+    /* Aumentei o z-index para garantir que fique na frente */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    /* Adiciona transição suave */
+    flex-shrink: 0;
+    /* Impede que a sidebar encolha */
+}
 
-        .sidebar nav {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Alinhado ao topo */
+    width: 100%;
+    height: 100%;
+}
 
-        .sidebar .link_main_logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.sidebar .main_logo {
+    width: 150px;
+    /* Um tamanho fixo pode ser melhor */
+    max-width: 80%;
+}
 
-        .sidebar .main_logo {
-            width: 80%;
-        }
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 30px;
+}
 
-        .sidebar nav ul {
-            list-style: none;
-            padding: 0;
-            width: 100%;
-        }
+.sidebar nav ul li a {
+    display: flex;
+    /* Usar flex para alinhar ícone e texto */
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
+    /* Bordas mais suaves */
+    margin-bottom: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
 
-        .sidebar nav ul li a {
-            display: block;
-            color: black;
-            text-decoration: none;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            transition: background-color 0.3s;
-        }
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+    background-color: var(--corlaranja);
+    color: white;
+}
 
-        .sidebar nav ul li a:hover,
-        .sidebar nav ul li a.active {
-            background-color: var(--corlaranja);
-            color: white;
-        }
+.main-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 100vh;
+    /* Garante que o scroll seja dentro do main-content */
+}
 
-        .main-content {
-            flex-grow: 1;
-            /* Ocupa o espaço restante */
+.topbar {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra apenas para baixo */
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 30px;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    /* Garante que o padding não afete a largura total */
+}
 
-            overflow-y: auto;
-            /* Adiciona scroll se o conteúdo for grande */
-        }
+.topbar .user-info {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--corlaranja);
+    margin-left: 30px;
+}
 
-        header {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
-        }
+#content-outlet {
+    padding: 30px;
+}
 
-        .topbar {
-            width: 100%;
-            height: 80px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            background-color: white;
-        }
+footer {
+    margin-top: 40px;
+    padding: 20px 30px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #777;
+}
 
-        #content-outlet {
-            padding: 20px;
-        }
 
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            text-align: center;
-            color: #777;
-        }
+
+/* Botão Hambúrguer (escondido em telas grandes) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    color: #333;
+
+}
+
+/* Overlay (escondido por padrão) */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    /* Fica abaixo do menu, mas acima do conteúdo */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-notifications {
+    width: 45px;
+    border-radius: 12px;
+    color: var(--corlaranja);
+    height: 45px;
+    justify-content: center;
+    display: flex;
+    background-color: #F4D2CA;
+    align-items: center;
+}
+
+
+/* Media Query: Aplica estes estilos quando a tela tem 1080px de largura ou menos */
+@media (max-width: 1080px) {
+    .sidebar {
+        position: fixed;
+
+        top: 0;
+        left: 0;
+        height: 100%;
+        /* Esconde o menu para a esquerda, fora da tela */
+        transform: translateX(-100%);
+    }
+
+    /* Classe que o JS vai adicionar para mostrar o menu */
+    .sidebar.visible {
+        transform: translateX(0);
+    }
+
+    /* Mostra o botão hambúrguer */
+    .menu-toggle {
+        display: block;
+    }
+
+    .user-info {
+        margin-left: 0px !important;
+    }
+
+    .topbar {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+    }
+}
+
+/* Opcional: Para telas bem pequenas, o menu pode ocupar mais espaço */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 80%;
+        /* Menu ocupa 80% da tela */
+    }
+
+    #content-outlet,
+    .topbar,
+    footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
