@@ -1,0 +1,82 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f4f7fa;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: white;
+
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .sidebar .link_main_logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sidebar .main_logo {
+            width: 80%;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        .sidebar nav ul li a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar nav ul li a:hover,
+        .sidebar nav ul li a.active {
+            background-color: var(--corlaranja);
+            color: white;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            /* Ocupa o espaço restante */
+            padding: 30px;
+            overflow-y: auto;
+            /* Adiciona scroll se o conteúdo for grande */
+        }
+
+        header {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #777;
+        }
