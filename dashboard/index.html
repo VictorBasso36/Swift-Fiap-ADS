@@ -6,6 +6,7 @@
     <title>Swift Dashboard</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="../css//index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -13,22 +14,33 @@
         <nav>
             <br>
             <a href="#inicio" class="link_main_logo">
-                <img class="main_logo" src="../images/mainlogo.png" alt="Logo Swift" class="logo" />
+                <img class="main_logo" src="../images/mainlogo.png" alt="Logo Swift" />
             </a>
             <br>
             <br>
             <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#metas">Metas</a></li>
-                <li><a href="#equipe">Equipes</a></li>
-                <li><a href="#premio">Prémio</a></li>
+                <li><a href="#inicio"><i class="fa fa-home fa-1x"></i>&nbsp;<span class="link-text">Início</span></a></li>
+                <li><a href="#metas"><i class="fa fa-unlock fa-1x"></i>&nbsp;<span class="link-text">Metas</span></a></li>
+                <li><a href="#equipe"><i class="fa fa-users fa-1x"></i>&nbsp;<span class="link-text">Equipes</span></a></li>
+                <li><a href="#premio"><i class="fa fa-trophy fa-1x"></i>&nbsp;<span class="link-text">Prémio</span></a></li>
             </ul>
         </nav>
     </aside>
 
     <main class="main-content">
         <div class="topbar">
-           TODO: TOP BAR
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fa fa-bars fa-1x"></i>
+            </button>
+            
+
+            <div class="topbar-right">
+                <div class="user-info">
+                </div>
+                 <div class="user-notifications">
+                    <i class="fa fa-bell fa-1x" aria-hidden="true"></i>
+                </div>
+           </div>
         </div>
 
         <div id="content-outlet"></div>
@@ -38,6 +50,9 @@
         </footer>
     </main>
 
+    <div id="overlay" class="overlay"></div>
+
     <script src="./dashboard_router.js"></script>
+    <script src="./responsive_menu.js"></script> 
 </body>
 </html>
