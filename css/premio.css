@@ -1,0 +1,126 @@
+/* Estilo dos cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* distribui conteúdo */
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    text-align: center;
+    min-height: 400px; /* mesma altura pra todos */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(0.9);
+}
+
+.card h2 {
+    font-size: 2.5rem ;
+    margin-bottom: 2rem;
+}
+
+.card p {
+    font-size: 1.8rem;
+    color: #666;
+}
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.card1 {
+    grid-area: card1;
+}
+.card2 {
+    grid-area: card2;
+
+}
+.card3 {
+    grid-area: card3;
+
+}
+.card4 {
+    grid-area: card4;
+
+}
+.card5 {
+    grid-area: card5;
+
+}
+.card6 {
+    grid-area: card6;
+}
+
+
+/* Estilo do placar */
+.placar  {
+    padding-top: 50px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    width: 500px;
+    width: 100%;        
+    max-width: 900px;   
+    margin: 2rem auto;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.medals {
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.medals span {
+    opacity: 0.3;
+}
+
+.medals .active {
+    opacity: 1;
+}
+
+.progress-container {
+    background: #e0e0e0;
+    border-radius: 8px;
+    height: 15px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background: #e75025;
+    transition: width 0.5s ease-in-out;
+}
+
+.percent {
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    }
+
+.message {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
