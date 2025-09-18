@@ -1,0 +1,176 @@
+/* 1. ESTILOS GERAIS E LAYOUT */
+
+
+body {
+    background-color: #f8f9fa;
+}
+
+.section {
+    background-color: #F9FAFB;
+}
+
+/* Bloco principal usado para a tabela */
+.bloco {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 2. COMPONENTE: TABELA DE MEMBROS
+
+/* Imagem de perfil do membro */
+.table img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+/* Barra de progresso */
+.progress {
+    height: 10px;
+}
+
+.progress-bar {
+    transition: width 1s ease-in-out; /* Animação */
+}
+
+.progress-bar-custom {
+    background-color: #e75025 !important;
+}
+
+/* Conquistas (Medalhas) */
+.medals span {
+    font-size: 22px;
+    opacity: 0.3; /* Padrão: medalha não conquistada */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.medals span.active {
+    opacity: 1; /* Medalha conquistada */
+}
+
+.fa-medal {
+    color: #ffd000;
+}
+
+/* Tags de classificação */
+.tag {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.tag-verde {
+    background-color: #d4f5d4;
+    color: #000;
+}
+
+.tag-azul {
+    background-color: #74b9ff;
+    color: #fff;
+}
+
+.tag-amarelo {
+    background-color: #ffeaa7;
+    color: #000;
+}
+
+.tag-roxo {
+    background-color: #a29bfe;
+    color: #fff;
+}
+
+
+/* 3. COMPONENTE: CARDS DE DESAFIOS
+
+/* Estilo base do card */
+.card-desafio {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-desafio:hover {
+    transform: translateY(-5px);
+}
+
+/* Seção superior do card (com ícone e cor) */
+.card-img-top-container {
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-img-top {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Conteúdo de texto do card */
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    min-height: 48px; /* Garante que os títulos tenham a mesma altura */
+    color: #343a40;
+}
+
+/* Variações de cor dos cards */
+.card-vermelho .card-img-top-container {
+    background-color: #f26259;
+}
+
+.card-roxo .card-img-top-container {
+    background-color: #a481c2;
+}
+
+.card-verde .card-img-top-container {
+    background-color: #84e19b;
+}
+
+/* Variações de cor do texto de recompensa */
+.text-recompensa-vermelho {
+    color: #f26259;
+    font-weight: 500;
+}
+
+.text-recompensa-roxo {
+    color: #a481c2;
+    font-weight: 500;
+}
+
+.text-recompensa-verde {
+    color: #84e19b;
+    font-weight: 500;
+}
+
+/* 4. CLASSES UTILITÁRIAS (EXEMPLO)
+
+/* Classes de imagem com background e sombra */
+.img-rosa,
+.img-roxo,
+.img-verde {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img-rosa {
+    background-image: url(../images/rosa.png);
+}
+
+.img-roxo {
+    background-image: url(../images/roxo.png);
+}
+
+.img-verde {
+    background-image: url(../images/verde.png);
+}
