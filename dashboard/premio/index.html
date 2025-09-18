@@ -1,6 +1,6 @@
 <head>
-    <link rel="stylesheet" href="/Fintech/css/premio.css">
-    </head>
+    <link rel="stylesheet" href="../../css/premio.css">
+</head>
 
 <header>
     <h1>Premiação</h1>
@@ -11,42 +11,42 @@
         <div class="col-12 col-md-6 col-lg-4">
             <div class="card card1" data-bs-toggle="modal" data-bs-target="#modal1">
                 <h2>Fone de ouvido</h2>
-                <img src="/Fintech/images/fone_jbl.png" alt="Fone JBL">
+                <img src="../../images/fone_jbl.png" alt="Fone JBL">
                 <p>1.000 swift Coin <i class="fa-solid fa-coins"></i></p>
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="card card2" data-bs-toggle="modal" data-bs-target="#modal2">
                 <h2>Garrafa térmica</h2>
-                <img src="/Fintech/images/garrafa_termica.png" alt="Garrafa térmica">
+                <img src="../../images/garrafa_termica.png" alt="Garrafa térmica">
                 <p>1.000 swift Coin <i class="fa-solid fa-coins"></i></p>
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="card card3" data-bs-toggle="modal" data-bs-target="#modal3">
                 <h2>Smartwatch</h2>
-                <img src="/Fintech/images/Smartwatch.png" alt="Smartwatch">
+                <img src="../../images/Smartwatch.png" alt="Smartwatch">
                 <p>1.000 swift Coin <i class="fa-solid fa-coins"></i></p>
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="card card4" data-bs-toggle="modal" data-bs-target="#modal4">
                 <h2>PlayStation 5</h2>
-                <img src="/Fintech/images/ps5.png" alt="PlayStation 5">
+                <img src="../../images/ps5.png" alt="PlayStation 5">
                 <p>1.000 swift Coin <i class="fa-solid fa-coins"></i></p>
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="card card5" data-bs-toggle="modal" data-bs-target="#modal5">
                 <h2>Caixa de som</h2>
-                <img src="/Fintech/images/caixa_de_som.png" alt="Caixa de som">
+                <img src="../../images/caixa_de_som.png" alt="Caixa de som">
                 <p>1.000 swift Coin <i class="fa-solid fa-coins"></i></p>
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="card card6" data-bs-toggle="modal" data-bs-target="#modal6">
                 <h2>Notebook</h2>
-                <img src="/Fintech/images/notebook.png" alt="Notebook">
+                <img src="../../images/notebook.png" alt="Notebook">
                 <p>1.000 swift Coin <i class="fa-solid fa-coins"></i></p>
             </div>
         </div>
@@ -182,36 +182,7 @@
             </div>
         </div>
     </section>
-    <script src="/Fintech/js/placar.js"></script>
-    <script>
-        // Quantidade de medalhas conquistadas pela equipe
-        let medalsWon = 2; // Exemplo: 3 medalhas conquistadas
-        let totalMedals = 4;
-
-        const progressBar = document.getElementById("progress-bar");
-        const percentText = document.getElementById("percent-text");
-        const medals = document.querySelectorAll("#medals span");
-
-        function updateProgress(medalsWon) {
-        // Calcula a porcentagem
-            let percent = (medalsWon / totalMedals) * 100;
-
-        // Atualiza a barra
-            progressBar.style.width = percent + "%";
-            percentText.textContent = percent + "%";
-
-        // Marca as medalhas conquistadas
-            medals.forEach((medal, index) => {
-                if (index < medalsWon) {
-            medal.classList.add("active");
-                } else {
-            medal.classList.remove("active");
-            }
-            });
-        }
-
-        // Atualiza de acordo com as medalhas conquistadas
-        updateProgress(medalsWon);
-    </script>
+    <script src="../../js/placar.js"></script>
+  
 </main>
 
