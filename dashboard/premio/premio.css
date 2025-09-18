@@ -113,10 +113,10 @@
     margin-bottom: 10px;
 }
 
-.progress-bar {
+.progress-container .progress-bar {
     height: 100%;
     width: 0;
-    background: #e75025;
+    background-color: #e75025;
     transition: width 0.5s ease-in-out;
 }
 
