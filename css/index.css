@@ -12,3 +12,8 @@
     --corcinza: #6C6C6C;
     --corpreta: #000000;
 }
+
+
+header h1 {
+    font-weight: bold;
+}
