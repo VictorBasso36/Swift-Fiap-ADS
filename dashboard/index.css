@@ -63,6 +63,10 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.sidebar nav ul li a .link-text {
+    font-weight: 500;
+}
+
 .sidebar nav ul li a:hover,
 .sidebar nav ul li a.active {
     background-color: var(--corlaranja);
