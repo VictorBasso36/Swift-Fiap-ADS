@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const totalMedals = 4; // total de medalhas possíveis
+const initEquipePlacar = () => {
+  const totalMedals = 4; 
 
   document.querySelectorAll("tr[data-medals]").forEach(row => {
     let medalsWon = parseInt(row.getAttribute("data-medals"));
@@ -8,14 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const percentText = row.querySelector(".percent-text");
     const medals = row.querySelectorAll(".medals span");
 
-    // Calcula %
+    if (!progressBar || !percentText || !medals) {
+      return;
+    }
+    
     let percent = Math.round((medalsWon / totalMedals) * 100);
 
-    // Atualiza barra
     progressBar.style.width = percent + "%";
     percentText.textContent = percent + "%";
 
-    // Atualiza medalhas
     medals.forEach((medal, index) => {
       if (index < medalsWon) {
         medal.classList.add("active");
@@ -24,5 +25,19 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+};
+
+const observer = new MutationObserver((mutationsList, obs) => {
+  if (document.querySelector('tr[data-medals]')) {
+    initEquipePlacar();
+    obs.disconnect(); 
+  }
 });
+
+observer.observe(document.body, {
+  childList: true,
+  subtree: true
+});
+
+document.addEventListener('DOMContentLoaded', initEquipePlacar);
 
