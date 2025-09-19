@@ -101,14 +101,25 @@ body {
 
 #content-outlet {
     padding: 30px;
+    background-color: #f3f5f7;
+    min-height: 90%;
 }
 
 footer {
-    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 20px 30px;
     border-top: 1px solid #ddd;
     text-align: center;
     color: #777;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
 }
 
 

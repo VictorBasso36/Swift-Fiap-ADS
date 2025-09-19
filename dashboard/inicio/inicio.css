@@ -1,0 +1,190 @@
+.card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+.card-section-2 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+.card-header {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-principal-number {
+    color: var(--corlaranja);
+    line-height: 100%;
+    font-size: 80px;
+}
+
+.card-principal-stats {
+    display: flex;
+    gap: 15px;
+}
+
+.card-principal-stats p {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-principal-stats p span {
+    color: yellowgreen;
+}
+
+.card-header h2 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.card-item-home {
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(168, 168, 168);
+    background-color: white;
+}
+
+.medals-circle-home {
+    background-color: #F4D2CA;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.medals-text-home {
+    margin-left: 10px;
+}
+
+.medals-text-home p {
+    margin: 0;
+}
+
+.team-medals {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teams-medals-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.teams-medals-coins-home {
+    font-weight: bold;
+    min-width: 85px;
+}
+
+.teams-medals-coins-home p {
+    margin: 0;
+    width: 100%;
+    text-align: right;
+}
+
+.progress-bar-container-team {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.team-member-info-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-member-info-container p {
+    margin: 0px;
+}
+
+.team-member-info-container .team-profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--corlaranja);
+}
+
+.team-member-info-home {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-member-info-home .progress-container {
+    width: 80%;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1180px) {
+    .card-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .team-medals {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .teams-medals-coins-home p {
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .card-principal-number {
+        color: var(--corlaranja);
+        line-height: 100%;
+        font-size: 60px;
+    }
+
+    .team-member-info-home {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .progress-bar-container-team {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+
+}
