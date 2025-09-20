@@ -1,24 +1,29 @@
 .metas-container-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
+    display: flex;
+    gap: 40px;
+
+}
+
+.content-left-metas {
+    width: 50%;
+}
+
+.content-right-metas {
+    width: 50%;
 }
 
 .you-main-item {
-    display: grid;
-    grid-template-columns: 0.4fr 0.6fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .you-main-profile-picture {
-    width: 100%;
-    height: 0;
-    /* A altura é zerada */
-    padding-bottom: 100%;
+    width: 280px;
+    height: 280px;
+
     /* O padding força a altura a ter 100% da largura */
     border-radius: 20px;
     background-color: #757C75;
@@ -28,18 +33,208 @@
 .you-profile-info {
     height: 100%;
     display: flex;
+    min-height: 280px;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
 }
 
+.you-profile-info h2 {
+    margin: 0px;
+    font-size: 62px;
+    font-weight: bolder;
+}
+
+.you-profile-info p {
+    margin: 0px;
+    font-size: 30px;
+    color: #555;
+}
+
+.table-item-metas {
+    width: 100%;
+}
+
+.table-item-metas table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Removes space between cells */
+}
+
+/* Using grid layout on the table rows to control column fractions */
+.table-item-metas tr {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.5fr;
+    /* As requested: Rank | Vendedores | Swift Coin */
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.table-item-metas tbody tr:last-child {
+    border-bottom: none;
+    /* Removes the border from the last row */
+}
+
+.table-item-metas tbody tr:hover {
+    background-color: #f9f9f9;
+    /* Subtle hover effect */
+}
+
+/* Styling for header cells (th) and body cells (td) */
+.table-item-metas th,
+.table-item-metas td {
+    padding: 16px 12px;
+    text-align: left;
+}
+
+/* Specific styling for the table header */
+.table-item-metas thead tr {
+    background-color: #fafafa;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.table-item-metas th {
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+/* Styling for the second column (Vendedores) to align photo and name */
+.table-item-metas td:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* Space between photo and name */
+}
+
+.table-item-metas .table-item-seller-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Makes the div a circle */
+    background-color: #d1d5db;
+    /* Placeholder color */
+    background-size: cover;
+    background-position: center;
+}
+
+.table-item-metas td p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Styling for specific ranks */
+.table-item-metas .rank-1st {
+    font-weight: 700;
+    color: #d4af37;
+}
+
+/* Gold */
+.table-item-metas .rank-2nd {
+    font-weight: 700;
+    color: #c0c0c0;
+}
+
+/* Silver */
+.table-item-metas .rank-3rd {
+    font-weight: 700;
+    color: #cd7f32;
+}
+
+/* Bronze */
+
 
 @media screen and (max-width: 1180px) {
     .metas-container-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+
+    }
+
+    .content-left-metas {
+        width: 100%;
+    }
+
+    .content-right-metas {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 1080px) {
+    .you-main-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .you-main-profile-picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        background-color: #757C75;
+    }
+
+
+    .you-profile-info {
+        height: 100%;
+        display: flex;
+        min-height: unset;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .you-profile-info h2 {
+        margin: 0px;
+        font-size: 32px;
+        font-weight: bolder;
+    }
+
+    .you-profile-info p {
+        margin: 0px;
+        font-size: 20px;
+        color: #555;
+    }
+
+
+    .table-item-metas .table-item-seller-photo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        /* Makes the div a circle */
+        background-color: #d1d5db;
+        /* Placeholder color */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .table-item-metas th,
+    .table-item-metas td {
+        padding: 14px 10px;
+        text-align: left;
+    }
+
+    .chart-wrapper {
+        position: relative;
+        /* Necessário para o Chart.js */
+        overflow-x: auto;
+        /* A MÁGICA: Habilita a rolagem horizontal */
+        width: 100%;
+    }
+
+
+    .chart-wrapper {
+        position: relative;
+        /* Necessário para o Chart.js */
+        overflow-x: auto;
+        /* A MÁGICA: Habilita a rolagem horizontal */
+        width: 100%;
     }
 }
