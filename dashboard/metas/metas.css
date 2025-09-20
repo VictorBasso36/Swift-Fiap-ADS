@@ -23,17 +23,13 @@
 .you-main-profile-picture {
     width: 280px;
     height: 280px;
-
-    /* O padding força a altura a ter 100% da largura */
     border-radius: 20px;
     background-color: #757C75;
 }
 
 
 .you-profile-info {
-    height: 100%;
     display: flex;
-    min-height: 280px;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
