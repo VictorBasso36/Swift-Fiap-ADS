@@ -24,6 +24,8 @@
     width: 280px;
     height: 280px;
     border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #757C75;
 }
 
@@ -68,14 +70,19 @@
     transition: background-color 0.2s ease-in-out;
 }
 
+.table-item-metas tbody tr {
+    transition: all 500ms ease-in-out;
+}
+
 .table-item-metas tbody tr:last-child {
     border-bottom: none;
     /* Removes the border from the last row */
 }
 
 .table-item-metas tbody tr:hover {
-    background-color: #f9f9f9;
-    /* Subtle hover effect */
+    background-color: #F4D2CA;
+    color: var(--corlaranja);
+    font-weight: bold;
 }
 
 /* Styling for header cells (th) and body cells (td) */
