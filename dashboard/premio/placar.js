@@ -8,7 +8,7 @@
 
         if (!progressBar || !percentText || !medalsContainer) return;
 
-        const totalMedals = 4; // Assuming a total of 4 goals/tasks for 100%
+        const totalMedals = 4;
         const allMedalItems = medalsContainer.querySelectorAll(".medals-item");
         const clientMedalsCount = allMedalItems.length;
         const percentage = totalMedals > 0 ? (clientMedalsCount / totalMedals) * 100 : 0;
@@ -25,16 +25,15 @@
         }
     };
 
-    // Observer to handle Placar initialization dynamically
     const placarObserver = new MutationObserver((mutationsList) => {
         for (const mutation of mutationsList) {
             mutation.addedNodes.forEach(node => {
-                // Check if the added element or its children match our target
+
                 if (node.nodeType === 1 && (node.classList.contains('placar') || node.querySelector('.placar'))) {
                     initPlacar();
                 }
             });
-             // No specific cleanup is needed if the placar is removed, so we don't watch for removedNodes
+          
         }
     });
     
