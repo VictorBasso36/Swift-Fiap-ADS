@@ -59,11 +59,19 @@
     background-color: white;
 }
 
+.card-item-home-no-padding {
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgb(168, 168, 168);
+    background-color: white;
+}
+
 .medals-circle-home {
     background-color: #F4D2CA;
     padding: 10px;
     border-radius: 12px;
 }
+
 
 .medals-text-home {
     margin-left: 10px;
