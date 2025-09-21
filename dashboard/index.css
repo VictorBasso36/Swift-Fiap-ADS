@@ -130,6 +130,17 @@ footer p {
 }
 
 
+footer p strong {
+    font-weight: bold;
+    color: var(--corlaranja);
+}
+
+footer p span {
+    font-weight: bold;
+    color: #ed145b;
+}
+
+
 
 /* Botão Hambúrguer (escondido em telas grandes) */
 .menu-toggle {
