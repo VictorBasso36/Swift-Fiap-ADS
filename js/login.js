@@ -1,11 +1,29 @@
-const telaLoginRegistro = document.querySelector('#tela-login-registro');
-const btnLogin = document.querySelector('#btn-login');
-const btnRegistro = document.querySelector('#btn-registro');
+// Seleciona os elementos do DOM
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const mobileSignUp = document.getElementById('mobileSignUp');
+const mobileSignIn = document.getElementById('mobileSignIn');
+const container = document.getElementById('container');
 
-btnRegistro.addEventListener('click', ()=>{
-    telaLoginRegistro.classList.add('ativo')
-})
+// Função para ativar o painel de registro
+const showSignUpPanel = (e) => {
+    e.preventDefault();
+    container.classList.add('right-panel-active');
+};
 
-btnLogin.addEventListener('click', ()=>{
-    telaLoginRegistro.classList.remove('ativo')
-})
+// Função para ativar o painel de login
+const showSignInPanel = (e) => {
+    e.preventDefault();
+    container.classList.remove('right-panel-active');
+};
+
+// Adiciona eventos de clique para os botões do DESKTOP
+signUpButton.addEventListener('click', showSignUpPanel);
+signInButton.addEventListener('click', showSignInPanel);
+
+// Adiciona eventos de clique para os links do MOBILE
+mobileSignUp.addEventListener('click', showSignUpPanel);
+mobileSignIn.addEventListener('click', showSignInPanel);
+
+
+

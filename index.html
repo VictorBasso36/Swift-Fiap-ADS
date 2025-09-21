@@ -1,78 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./images/logo_swift.png" />
-    <title>Login</title>
+    <title>Login Responsivo</title>
 
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="./css/equipe.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
-<body class="tela">
-    <main id="tela-login-registro">
-        <div class="interface" id="login">
-            <section class="tela-login">
-                <h1>Faça seu <span>login</span></h1>
-
-                <form action="/dashboard/#inicio">
-
-                    <input type="email" name="email" id="email" value="exemplo123@gmail.com" placeholder="Seu e-mail">
-                    <input type="password" name="senha" id="senha" value="12345678" placeholder="Sua senha">
-                    <a href="#">Esqueceu a senha?</a>
-                    <input type="submit"  value="Fazer login">
-                </form>
-
-                <article class="opt-login">
-                    <p>Ou faça login usando:</p>
-                    <div class="btn-opt-login">
-                        <button><i class="fa-brands fa-facebook"></i></button>
-                        <button><i class="fa-brands fa-google"></i></button>
-                        <button><i class="fa-brands fa-apple"></i></button>
-                    </div>
-                </article>
-
-                <article class="txt-criar-conta-login">
-                    <p>Não tem conta? <a href="#" id="btn-registro">Crie uma agora!</a></p>
-                </article>
-            </section>
-            
-            <section class="img-decoracao img-login"></section>
-        </div>
-
-        <div class="interface" id="criar-conta">
-
-            <section class="img-decoracao img-criar-conta"></section>
-
-            <section class="tela-login">
+<body class="gradient-background">
+    <main class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="/dashboard/#inicio">
+                <img class="form-container-image" src="./images/mainlogo.png" alt="logoSwift">
                 <h1>Crie a <span>sua conta</span></h1>
-
-                <form action="/dashboard/#inicio">
-                    <div class="nome-sobrenome">
-                        <input type="text" name="name" id="name" value="João"  placeholder="Nome">
-                        <input type="text" name="sobrenome" id="sobrenome" value="Teste" placeholder="Sobrenome">
-                    </div>
-                    <input type="email" name="email" id="email" value="exemplo123@gmail.com" placeholder="Seu e-mail">
-                    <input type="password" name="senha" id="senha" value="12345678" placeholder="Sua senha">
-                    <input type="passwordconfirm" name="passwordconfirm" id="passwordconfirm" value="12345678" placeholder="Confirme a sua senha">
-                    <input type="submit" value="Criar conta">
-                </form>
-
-                <article class="txt-criar-conta-login">
-                    <p>Já tem uma conta? <a href="#" id="btn-login">Faça login!</a></p>
-                </article>
-            </section>
-            
+              
+                <div class="social-container">
+                    <button type="button" class="social"><i class="fa-brands fa-facebook"></i></button>
+                    <button type="button" class="social"><i class="fa-brands fa-google"></i></button>
+                    <button type="button" class="social"><i class="fa-brands fa-apple"></i></button>
+                </div>
+                <span>ou use seu e-mail para registrar</span>
+                <div class="nome-sobrenome">
+                    <input type="text" name="name" value="João" placeholder="Nome" />
+                    <input type="text" name="sobrenome" value="Teste" placeholder="Sobrenome" />
+                </div>
+                <input type="email" name="email" value="exemplo123@gmail.com" placeholder="Seu e-mail" />
+                <input type="password" name="senha" value="12345678" placeholder="Sua senha" />
+                <input type="password" name="passwordconfirm" value="12345678" placeholder="Confirme a sua senha" />
+                <button type="submit" class="submit-btn">Criar conta</button>
+                <a href="#" class="mobile-link" id="mobileSignIn">Já tem uma conta? Faça login!</a>
+            </form>
         </div>
-        <script src="./js/login.js"></script>
+
+        <div class="form-container sign-in-container">
+            <form action="/dashboard/#inicio">
+                <img class="form-container-image" src="./images/mainlogo.png" alt="logoSwift">
+                <h1>Faça seu <span>login</span></h1>
+              
+                <div class="social-container">
+                    <button type="button" class="social"><i class="fa-brands fa-facebook"></i></button>
+                    <button type="button" class="social"><i class="fa-brands fa-google"></i></button>
+                    <button type="button" class="social"><i class="fa-brands fa-apple"></i></button>
+                </div>
+                <span>ou use sua conta</span>
+                <input type="email" name="email" value="exemplo123@gmail.com" placeholder="Seu e-mail" />
+                <input type="password" name="senha" value="12345678" placeholder="Sua senha" />
+                <a href="#">Esqueceu a senha?</a>
+                <button type="submit" class="submit-btn">Fazer login</button>
+                <a href="#" class="mobile-link" id="mobileSignUp">Não tem conta? Crie uma!</a>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bem-vindo de volta!</h1>
+                    <p>Para se manter conectado, faça login com suas informações pessoais.</p>
+                    <button class="ghost" id="signIn">Fazer Login</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Olá, Amigo!</h1>
+                    <p>Insira seus dados e comece sua jornada conosco.</p>
+                    <button class="ghost" id="signUp">Criar conta</button>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
