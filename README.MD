@@ -1,108 +1,86 @@
-Swift Gamificação
-📄 Sobre o Projeto
-Swift Gamificação é uma plataforma de dashboard interativo projetada para transformar a cultura de vendas da Swift. Utilizando mecânicas de gamificação, o projeto visa aumentar o engajamento, a motivação e a transparência entre as equipes, convertendo metas de vendas em uma jornada competitiva e recompensadora.
+# Swift Gamificação  
 
-🎯 O Desafio
-A plataforma foi concebida para solucionar os seguintes desafios-chave no ambiente de vendas:
-
-Baixo Engajamento: Conectar os colaboradores com as metas e resultados da empresa.
-
-Falta de Reconhecimento: Criar um sistema de feedback imediato e contínuo.
-
-Motivação a Longo Prazo: Manter as equipes inspiradas através de ciclos dinâmicos.
-
-Colaboração: Fortalecer o espírito de equipe e a competição saudável.
-
-Transparência: Oferecer uma visão clara do desempenho individual e coletivo.
-
-✨ Funcionalidades Principais
-A plataforma é dividida em quatro seções principais, cada uma com um propósito específico:
-
-Seção
-
-Descrição
-
-🏠 Início
-
-Um hub central que exibe as "Swift Coins", o progresso das metas diárias e mensais e as tarefas disponíveis para ganhar pontos.
-
-🏆 Metas
-
-Área de desempenho individual, onde o usuário pode visualizar seu ranking, performance histórica (gráfico de vendas) e tarefas pendentes.
-
-👥 Equipe
-
-Dashboard coletivo para visualizar a performance do time, o progresso dos membros e os desafios em equipe que desbloqueiam recompensas conjuntas.
-
-🎁 Prêmios
-
-Uma loja virtual onde os usuários podem trocar suas "Swift Coins" por uma variedade de prêmios, culminando em uma grande recompensa final para a equipe.
-
-💻 Telas da Aplicação
-Confira a interface limpa e motivadora do nosso dashboard:
-
+## 👥 Equipe de Desenvolvimento  
 <table>
 <tr>
-<td align="center"><b>Página Inicial</b></td>
-<td align="center"><b>Metas e Ranking</b></td>
+<td align="center" width="200"><pre><a href="#"><img src="https://avatars.githubusercontent.com/u/000?v=4" width="200" alt="GitHub Profile picture"/><br><sub>Victor</sub></a><br>RM563638</pre></td>
+<td align="center" width="200"><pre><a href="#"><img src="https://avatars.githubusercontent.com/u/000?v=4" width="200" alt="GitHub Profile picture"/><br><sub>Iago</sub></a><br>RM565411</pre></td>
+<td align="center" width="200"><pre><a href="#"><img src="https://avatars.githubusercontent.com/u/000?v=4" width="200" alt="GitHub Profile picture"/><br><sub>Henrique</sub></a><br>RM563694</pre></td>
 </tr>
-<tr>
-<td><img src="https://www.google.com/search?q=https://i.imgur.com/uR2N8eO.png" alt="Tela Inicial do Dashboard" width="400"></td>
-<td><img src="https://www.google.com/search?q=https://i.imgur.com/zWzHh98.png" alt="Tela de Metas e Desempenho" width="400"></td>
-</tr>
-<tr>
-<td align="center"><b>Performance da Equipe</b></td>
-<td align="center"><b>Loja de Prêmios</b></td>
-</tr>
-<tr>
-<td><img src="https://www.google.com/search?q=https://i.imgur.com/00e8T1F.png" alt="Tela de Performance da Equipe" width="400"></td>
-<td><img src="https://www.google.com/search?q=https://i.imgur.com/KxT5g95.png" alt="Tela da Loja de Prêmios" width="400"></td>
-</tr>
-</table>
+</table>  
 
-🛠️ Arquitetura e Design
-Modelo de Dados
-Para garantir a escalabilidade e a integridade dos dados, o projeto utiliza um Modelo Entidade-Relacionamento (MER) bem estruturado. Este modelo centraliza a pontuação, normaliza as informações e permite a geração de rankings e relatórios em tempo real.
+---
 
-Experiência do Usuário (UX/UI)
-Nossa filosofia de design combina um UX motivador com uma UI minimalista. O resultado é uma experiência divertida e produtiva, baseada nos seguintes pilares:
+## 📄 Sobre o Projeto  
+**Swift Gamificação** é uma plataforma de dashboard interativo projetada para transformar a cultura de vendas da Swift.  
+Através de mecânicas de **gamificação**, o projeto busca aumentar o **engajamento, motivação e transparência** entre as equipes, convertendo metas de vendas em uma **jornada competitiva e recompensadora**.  
 
-Hierarquia Clara e Design Limpo: Para facilitar a navegação.
+---
 
-Feedback Imediato: Elementos visuais que comunicam progresso e conquistas.
+## 🎯 O Desafio  
+A plataforma foi concebida para solucionar os seguintes desafios no ambiente de vendas:  
+- **Baixo Engajamento** → Conectar colaboradores com metas e resultados.  
+- **Falta de Reconhecimento** → Sistema de feedback imediato e contínuo.  
+- **Motivação a Longo Prazo** → Ciclos dinâmicos que mantêm o interesse.  
+- **Colaboração** → Incentivo à competição saudável e espírito de equipe.  
+- **Transparência** → Visão clara do desempenho individual e coletivo.  
 
-Consistência Visual: Uma interface coesa e intuitiva.
+---
 
-Iconografia Clara: Ícones que simplificam a interação.
+## ✨ Funcionalidades  
+- **🏠 Início** → Hub central com *Swift Coins*, progresso diário/mensal e tarefas.  
+- **🏆 Metas** → Ranking individual, gráfico histórico e pendências.  
+- **👥 Equipe** → Dashboard coletivo com progresso do time e desafios em grupo.  
+- **🎁 Prêmios** → Loja virtual para trocar *Swift Coins* por recompensas.  
 
-🚀 Como Executar o Projeto
-Instruções para rodar o projeto localmente.
+---
 
-Clone o repositório:
+## 💻 Telas da Aplicação  
+| ![Tela Inicial](https://i.imgur.com/uR2N8eO.png) | ![Tela de Metas](https://i.imgur.com/zWzHh98.png) |  
+|------------------------------------|------------------------------------|  
+| <p align="center">🏠 Página Inicial</p> | <p align="center">🏆 Metas e Ranking</p> |  
 
-git clone [URL-DO-SEU-REPOSITORIO-AQUI]
+| ![Tela Equipe](https://i.imgur.com/00e8T1F.png) | ![Tela Prêmios](https://i.imgur.com/KxT5g95.png) |  
+|------------------------------------|------------------------------------|  
+| <p align="center">👥 Performance da Equipe</p> | <p align="center">🎁 Loja de Prêmios</p> |  
 
-Navegue até a pasta do projeto:
+---
 
-cd [NOME-DA-PASTA-DO-PROJETO]
+## 🛠️ Tecnologias Utilizadas  
+<div style="display: inline_block">
+  <a href="#"><img alt="html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /></a>
+  <a href="#"><img alt="css3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /></a>
+  <a href="#"><img alt="js" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /></a>
+  <a href="#"><img alt="bootstrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" /></a>
+  <a href="#"><img alt="git" src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white"></a>
+  <a href="#"><img alt="github" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a>
+</div>  
 
-Abra o template.html em um servidor local.
+---
 
-Recomendamos a extensão "Live Server" para o Visual Studio Code.
+## 🛠️ Arquitetura e Design  
+**Modelo de Dados (MER)**  
+- Estruturado para garantir **escalabilidade e integridade**.  
+- Centraliza pontuação, normaliza informações e gera **rankings em tempo real**.  
 
-👥 Equipe de Desenvolvimento
-Nome
+**Experiência do Usuário (UX/UI)**  
+- **Hierarquia Clara e Design Limpo** → Navegação fácil.  
+- **Feedback Imediato** → Indicadores visuais de progresso.  
+- **Consistência Visual** → Interface coesa e minimalista.  
+- **Iconografia Clara** → Ícones intuitivos e simplificação da interação.  
 
-RM
+---
 
-Victor
+## 🚀 Como Executar o Projeto  
+Clone o repositório:  
+```bash
+git clone [URL-DO-SEU-REPOSITORIO]
+```
 
-RM563638
+Acesse a pasta:  
+```bash
+cd [NOME-DA-PASTA]
+```
 
-Iago
+Execute no navegador com um servidor local (ex: extensão **Live Server** no VS Code).  
 
-RM565411
-
-Henrique
-
-RM563694
