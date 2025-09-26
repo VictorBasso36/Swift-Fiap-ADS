@@ -42,7 +42,11 @@ A plataforma foi concebida para solucionar os seguintes desafios no ambiente de 
 
 | ![Tela Equipe](https://i.imgur.com/00e8T1F.png) | ![Tela Prêmios](https://i.imgur.com/KxT5g95.png) |  
 |------------------------------------|------------------------------------|  
-| <p align="center">👥 Performance da Equipe</p> | <p align="center">🎁 Loja de Prêmios</p> |  
+| <p align="center">👥 Performance da Equipe</p> | <p align="center">🎁 Loja de Prêmios</p> |
+
+| ![Tela Login](https://i.imgur.com/00e8T1F.png) | ![Tela Cadastro](https://i.imgur.com/KxT5g95.png) |  
+|------------------------------------|------------------------------------|  
+| <p align="center">🔓 login</p> | <p align="center">🔐 Cadastro</p> |  
 
 ---
 
