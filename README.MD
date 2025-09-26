@@ -74,13 +74,14 @@ A plataforma foi concebida para solucionar os seguintes desafios no ambiente de 
 ## 🚀 Como Executar o Projeto  
 Clone o repositório:  
 ```bash
-git clone [URL-DO-SEU-REPOSITORIO]
+git clone https://github.com/VictorBasso36/Swift-Fiap-ADS.git
 ```
 
 Acesse a pasta:  
 ```bash
-cd [NOME-DA-PASTA]
+cd Swift-Fiap-ADS
 ```
 
 Execute no navegador com um servidor local (ex: extensão **Live Server** no VS Code).  
 
+[Acesse o projeto finalizado, online](https://swift-fiap-ads.vercel.app/)
