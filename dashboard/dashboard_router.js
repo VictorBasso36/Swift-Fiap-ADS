@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(path);
             if (!response.ok) {
+                window.location.replace('/dashboard/#inicio');
                 throw new Error(`Erro ${response.status}: Não foi possível encontrar o recurso.`);
             }
             const htmlContent = await response.text();
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error('Erro ao carregar a página:', error);
             contentOutlet.innerHTML = `<h1>Erro ao carregar conteúdo</h1><p>Não foi possível encontrar a página em <code>${path}</code>. Verifique o console para mais detalhes.</p>`;
+            window.location.replace('/dashboard/#inicio');
         }
     };
 

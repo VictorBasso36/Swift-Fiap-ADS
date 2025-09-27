@@ -184,6 +184,7 @@ footer p span {
 .user-notifications {
     width: 45px;
     border-radius: 12px;
+    cursor: pointer;
     color: var(--corlaranja);
     height: 45px;
     justify-content: center;
