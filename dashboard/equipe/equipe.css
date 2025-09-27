@@ -17,9 +17,14 @@ body {
 }
 
 
-/* 2. COMPONENTE: TABELA DE MEMBROS
+/* 2. COMPONENTE: TABELA DE MEMBROS */
+.table-hover tbody tr:hover > * {
+    --bs-table-hover-bg: #F4D2CA;
+    --bs-table-hover-color: #ff6600;
+}
 
-/* Imagem de perfil do membro */
+
+/* Imagem de perfil do membro */        
 .table img {
     width: 40px;
     height: 40px;
@@ -54,10 +59,6 @@ body {
 .medals span.active {
     opacity: 1;
     /* Medalha conquistada */
-}
-
-.fa-medal {
-    color: #ffd000;
 }
 
 /* Tags de classificação */
