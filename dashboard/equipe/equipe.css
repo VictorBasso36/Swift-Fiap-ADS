@@ -35,7 +35,8 @@ body {
 }
 
 .progress-bar {
-    transition: width 1s ease-in-out; /* Animação */
+    transition: width 1s ease-in-out;
+    /* Animação */
 }
 
 .progress-bar-custom {
@@ -45,12 +46,14 @@ body {
 /* Conquistas (Medalhas) */
 .medals span {
     font-size: 22px;
-    opacity: 0.3; /* Padrão: medalha não conquistada */
+    opacity: 0.3;
+    /* Padrão: medalha não conquistada */
     transition: opacity 0.3s ease-in-out;
 }
 
 .medals span.active {
-    opacity: 1; /* Medalha conquistada */
+    opacity: 1;
+    /* Medalha conquistada */
 }
 
 .fa-medal {
@@ -87,6 +90,14 @@ body {
     color: #fff;
 }
 
+.equipe-card {
+    background-color: white;
+}
+
+.equipe-card .card-body {
+    padding: 20px;
+
+}
 
 /* 3. COMPONENTE: CARDS DE DESAFIOS
 
@@ -103,7 +114,8 @@ body {
 
 /* Seção superior do card (com ícone e cor) */
 .card-img-top-container {
-    padding: 20px;
+    width: 100%;
+
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -121,37 +133,41 @@ body {
 }
 
 .card-title {
-    min-height: 48px; /* Garante que os títulos tenham a mesma altura */
+    min-height: 48px;
+    /* Garante que os títulos tenham a mesma altura */
     color: #343a40;
 }
 
 /* Variações de cor dos cards */
 .card-vermelho .card-img-top-container {
     background-color: #f26259;
+    padding: 10px 0px;
 }
 
 .card-roxo .card-img-top-container {
     background-color: #a481c2;
+    padding: 10px 0px;
 }
 
 .card-verde .card-img-top-container {
     background-color: #84e19b;
+    padding: 10px 0px;
 }
 
 /* Variações de cor do texto de recompensa */
 .text-recompensa-vermelho {
     color: #f26259;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .text-recompensa-roxo {
     color: #a481c2;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .text-recompensa-verde {
     color: #84e19b;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 /* 4. CLASSES UTILITÁRIAS (EXEMPLO)
