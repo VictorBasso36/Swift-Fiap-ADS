@@ -36,15 +36,15 @@ A plataforma foi concebida para solucionar os seguintes desafios no ambiente de 
 ---
 
 ## 💻 Telas da Aplicação  
-| ![Tela Inicial](https://i.imgur.com/uR2N8eO.png) | ![Tela de Metas](https://i.imgur.com/zWzHh98.png) |  
+| ![Tela Inicial](./images/telas/inicio.png) | ![Tela de Metas](./images/telas/metas.png) |  
 |------------------------------------|------------------------------------|  
 | <p align="center">🏠 Página Inicial</p> | <p align="center">🏆 Metas e Ranking</p> |  
 
-| ![Tela Equipe](https://i.imgur.com/00e8T1F.png) | ![Tela Prêmios](https://i.imgur.com/KxT5g95.png) |  
+| ![Tela Equipe](./images/telas/equipe.png) | ![Tela Prêmios](./images/telas/premios.png) |  
 |------------------------------------|------------------------------------|  
 | <p align="center">👥 Performance da Equipe</p> | <p align="center">🎁 Loja de Prêmios</p> |
 
-| ![Tela Login](https://i.imgur.com/00e8T1F.png) | ![Tela Cadastro](https://i.imgur.com/KxT5g95.png) |  
+| ![Tela Login](./images/telas/login.png) | ![Tela Cadastro](./images/telas/cadastro.png) |  
 |------------------------------------|------------------------------------|  
 | <p align="center">🔓 login</p> | <p align="center">🔐 Cadastro</p> |  
 
