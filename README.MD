@@ -88,4 +88,4 @@ cd Swift-Fiap-ADS
 
 Execute no navegador com um servidor local (ex: extensão **Live Server** no VS Code).  
 
-[Acesse o projeto finalizado, online](https://swift-fiap-ads.vercel.app/)
+[Acesse o projeto finalizado, online, clicando aqui!](https://swift-fiap-ads.vercel.app/)
