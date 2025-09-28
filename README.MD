@@ -35,7 +35,7 @@ A plataforma foi concebida para solucionar os seguintes desafios no ambiente de 
 
 ---
 
-## 💻 Telas da Aplicação  
+## 💻 Telas da Aplicação (100% responsivas)
 | ![Tela Inicial](./images/telas/inicio.png) | ![Tela de Metas](./images/telas/metas.png) |  
 |------------------------------------|------------------------------------|  
 | <p align="center">🏠 Página Inicial</p> | <p align="center">🏆 Metas e Ranking</p> |  
