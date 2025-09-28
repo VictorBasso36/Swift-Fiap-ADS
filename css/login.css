@@ -302,7 +302,7 @@ input {
 @media (max-width: 768px) {
     body {
         height: auto;
-        padding: 50px 0;
+        padding: 0px 0;
     }
 
     .container {
