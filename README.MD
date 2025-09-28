@@ -27,6 +27,11 @@ A plataforma foi concebida para solucionar os seguintes desafios no ambiente de 
 
 ---
 
+
+## 🚀 Projeto Online: 
+[Acesse o projeto finalizado, online, clicando aqui!](https://swift-fiap-ads.vercel.app/)
+
+
 ## ✨ Funcionalidades  
 - **🏠 Início** → Hub central com *Swift Coins*, progresso diário/mensal e tarefas.  
 - **🏆 Metas** → Ranking individual, gráfico histórico e pendências.  
@@ -88,4 +93,3 @@ cd Swift-Fiap-ADS
 
 Execute no navegador com um servidor local (ex: extensão **Live Server** no VS Code).  
 
-[Acesse o projeto finalizado, online, clicando aqui!](https://swift-fiap-ads.vercel.app/)
