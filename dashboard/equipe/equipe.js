@@ -6,7 +6,8 @@ const initEquipePlacar = () => {
 
     const progressBar = row.querySelector(".progress-bar");
     const percentText = row.querySelector(".percent-text");
-    const medals = row.querySelectorAll(".medals span");
+    // ABAIXO, a linha foi alterada de ".medals span" para ".equipe-medals span"
+    const medals = row.querySelectorAll(".equipe-medals span");
 
     if (!progressBar || !percentText || !medals) {
       return;

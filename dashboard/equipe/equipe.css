@@ -1,6 +1,5 @@
 /* 1. ESTILOS GERAIS E LAYOUT */
 
-
 body {
     background-color: #f8f9fa;
 }
@@ -9,29 +8,29 @@ body {
     background-color: #F9FAFB;
 }
 
-/* Bloco principal usado para a tabela */
+/* Bloco principal usado para componentes como a tabela */
 .bloco {
-    background-color: white;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 /* 2. COMPONENTE: TABELA DE MEMBROS */
+
+/* Efeito hover na linha da tabela */
 .table-hover tbody tr:hover > * {
     --bs-table-hover-bg: #F4D2CA;
     --bs-table-hover-color: #ff6600;
 }
 
-
-/* Imagem de perfil do membro */        
+/* Imagem de perfil do membro */
 .table img {
     width: 40px;
     height: 40px;
     margin-right: 8px;
+    vertical-align: middle;
     border-radius: 50%;
     object-fit: cover;
-    vertical-align: middle;
 }
 
 /* Barra de progresso */
@@ -41,7 +40,6 @@ body {
 
 .progress-bar {
     transition: width 1s ease-in-out;
-    /* Animação */
 }
 
 .progress-bar-custom {
@@ -49,60 +47,28 @@ body {
 }
 
 /* Conquistas (Medalhas) */
-.medals span {
+.equipe-medals span {
     font-size: 22px;
     opacity: 0.3;
-    /* Padrão: medalha não conquistada */
     transition: opacity 0.3s ease-in-out;
 }
 
-.medals span.active {
+.equipe-medals span.active {
     opacity: 1;
-    /* Medalha conquistada */
 }
 
-/* Tags de classificação */
-.tag {
-    display: inline-block;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #fff;
-}
+/* 3. COMPONENTE: CARDS DE DESAFIOS E EQUIPE */
 
-.tag-verde {
-    background-color: #d4f5d4;
-    color: #000;
-}
-
-.tag-azul {
-    background-color: #74b9ff;
-    color: #fff;
-}
-
-.tag-amarelo {
-    background-color: #ffeaa7;
-    color: #000;
-}
-
-.tag-roxo {
-    background-color: #a29bfe;
-    color: #fff;
-}
-
+/* Card de Equipe (Estilo específico) */
 .equipe-card {
-    background-color: white;
+    background-color: #fff;
 }
 
 .equipe-card .card-body {
     padding: 20px;
-
 }
 
-/* 3. COMPONENTE: CARDS DE DESAFIOS
-
-/* Estilo base do card */
+/* Card de Desafio (Estilo base) */
 .card-desafio {
     border: none;
     border-radius: 15px;
@@ -113,81 +79,125 @@ body {
     transform: translateY(-5px);
 }
 
-/* Seção superior do card (com ícone e cor) */
-.card-img-top-container {
-    width: 100%;
-
+/* Seção de imagem superior do card */
+.card-desafio .card-img-top-container {
+    padding: 10px 0;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-.card-img-top {
+.card-desafio .card-img-top {
     width: 100%;
     max-width: 120px;
     height: auto;
     object-fit: contain;
 }
 
-/* Conteúdo de texto do card */
+/* Corpo de texto comum dos cards */
 .card-body {
     padding: 1.5rem;
 }
 
-.card-title {
-    min-height: 48px;
-    /* Garante que os títulos tenham a mesma altura */
+.card-body .card-title {
+    min-height: 48px; /* Garante alinhamento dos títulos */
     color: #343a40;
 }
 
-/* Variações de cor dos cards */
+/* Variações de cor do card de desafio */
 .card-vermelho .card-img-top-container {
     background-color: #f26259;
-    padding: 10px 0px;
 }
 
 .card-roxo .card-img-top-container {
     background-color: #a481c2;
-    padding: 10px 0px;
 }
 
 .card-verde .card-img-top-container {
     background-color: #84e19b;
-    padding: 10px 0px;
 }
 
 /* Variações de cor do texto de recompensa */
-.text-recompensa-vermelho {
-    color: #f26259;
-    font-weight: bold;
-}
-
-.text-recompensa-roxo {
-    color: #a481c2;
-    font-weight: bold;
-}
-
+.text-recompensa-vermelho,
+.text-recompensa-roxo,
 .text-recompensa-verde {
-    color: #84e19b;
     font-weight: bold;
 }
 
-/* 4. CLASSES UTILITÁRIAS (EXEMPLO)
+.text-recompensa-vermelho { color: #f26259; }
+.text-recompensa-roxo { color: #a481c2; }
+.text-recompensa-verde { color: #84e19b; }
 
-/* Classes de imagem com background e sombra */
+/* 4. CLASSES UTILITÁRIAS */
+
+/* Tags de classificação */
+.tag {
+    display: inline-block;
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.tag-verde {
+    background-color: #d4f5d4;
+    color: #000;
+}
+
+.tag-azul {
+    background-color: #74b9ff;
+}
+
+.tag-amarelo {
+    background-color: #ffeaa7;
+    color: #000;
+}
+
+.tag-roxo {
+    background-color: #a29bfe;
+}
+
+/* Imagens com background e sombra */
 .img-rosa,
 .img-roxo,
 .img-verde {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.img-rosa {
-    background-image: url(../images/rosa.png);
+.img-rosa { background-image: url(../images/rosa.png); }
+.img-roxo { background-image: url(../images/roxo.png); }
+.img-verde { background-image: url(../images/verde.png); }
+
+
+/* 5. AJUSTES DE RESPONSIVIDADE (MEDIA QUERIES) */
+
+/* Tablets e celulares (telas menores que 768px) */
+@media (max-width: 768px) {
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .table td,
+    .table th {
+        padding: 0.5rem;
+        text-align: center; /* Centraliza o conteúdo para melhor estética */
+    }
+
+    .table img {
+        margin-right: 0;
+    }
+
+    .member-name {
+        display: none;
+    }
 }
 
-.img-roxo {
-    background-image: url(../images/roxo.png);
-}
-
-.img-verde {
-    background-image: url(../images/verde.png);
+/* Telas muito pequenas (celulares na vertical, menores que 480px) */
+@media (max-width: 480px) {
+    .equipe-medals span {
+        font-size: 18px;
+    }
 }
