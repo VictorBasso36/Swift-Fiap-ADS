@@ -5,7 +5,7 @@
 <tr>
 <td align="center" width="200"><pre><a href="https://github.com/VictorBasso36"><img src="https://avatars.githubusercontent.com/u/66968560?v=4" width="200" alt="GitHub Profile picture"/><br><sub>Victor</sub></a><br>RM563638</pre></td>
 <td align="center" width="200"><pre><a href="https://github.com/pedro-iago"><img src="https://avatars.githubusercontent.com/u/151461327?v=4" width="200" alt="GitHub Profile picture"/><br><sub>Iago</sub></a><br>RM565411</pre></td>
-<td align="center" width="200"><pre><a href="#"><img src="https://avatars.githubusercontent.com/u/000?v=4" width="200" alt="GitHub Profile picture"/><br><sub>Henrique</sub></a><br>RM563694</pre></td>
+<td align="center" width="200"><pre><a href="https://github.com/Henriquesouto2"><img src="https://avatars.githubusercontent.com/u/216632703?v=4" width="200" alt="GitHub Profile picture"/><br><sub>Henrique</sub></a><br>RM563694</pre></td>
 </tr>
 </table>  
 
